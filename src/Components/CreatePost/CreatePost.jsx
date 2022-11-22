@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Buttons from './Buttons/Buttons';
+
+
 
 const CreatePost = (props) => {
 
@@ -9,9 +12,10 @@ const CreatePost = (props) => {
         event.preventDefault();
         let newPost = {
             name: name,
-            post: post
+            post: post,
+            buttons: <Buttons/>
         } 
-        console.log(newPost)
+        props.addNewPost(newPost)
     }
 
     return ( 
