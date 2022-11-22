@@ -1,6 +1,11 @@
+import './NavBar.css'
+
 const NavBar = (props) => {
     return ( 
-    <div>NavBarPlacehold.exe.html.jsx.mp4</div>
+        <div className='SocialFeed'>
+            <p>Social</p>
+            <p className='feed'>Feed</p>
+        </div>
      );
 }
  
