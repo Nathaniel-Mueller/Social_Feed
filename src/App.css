@@ -3,17 +3,16 @@
     border-style: solid;
     border-color: black;
     border-radius: 25px;
+    width: 1049px;
     margin: 1em;
     padding: 1em;
 }
 
 .create-post-wrap{
-    width: 1049px;
     height: 207px;
 }
 
 .post-wrap{
-    width: 1049px;
     min-height: 500px;
 }
 

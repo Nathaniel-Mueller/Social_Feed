@@ -27,7 +27,7 @@ const CreatePost = (props) => {
                 </div>
                 <div className='create-row'>
                     <label className='post-margin'>Post</label>
-                    <input className='post-input' type = 'text' value = {post} onChange={(event) => setPost(event.target.value)}/>
+                    <textarea className='post-input text-area-style' type = 'text' value = {post} onChange={(event) => setPost(event.target.value)}></textarea>
                 </div>
                 <div>
                     <button className='button-margin' type='submit'>Create</button>

@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  const [posts, setPosts] = useState([{}])
+  const [posts, setPosts] = useState([])
 
   function addNewPost (post){
     let tempPosts = [...posts, post]

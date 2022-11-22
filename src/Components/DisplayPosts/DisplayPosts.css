@@ -1,0 +1,43 @@
+.bottom-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+.buttons-margin{
+    position: absolute;
+    margin-left: 58em;
+    margin-bottom: 1em;
+}
+
+.flex-container{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 1049px;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.change-name-size{
+    font-size: 35px
+}
+
+.text-wrap{
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pad{
+    padding: 3px;
+}
+
+.offset-post-content{
+    margin-left: 1em;
+    margin-right: 4em;
+}
+
+.max-post-width{
+    max-width: 882px;
+}

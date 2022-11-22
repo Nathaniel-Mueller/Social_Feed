@@ -8,14 +8,18 @@ div{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.text-area-style{
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(112,112,112);
+    resize: none;
+    
+}
+
 input{
     border-radius: 10px;
     border-width: 1px;
     border-color: rgb(112,112,112);
-}
-
-input[type='text']{
-    font-size: 25px;
 }
 
 .create-row{

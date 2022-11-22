@@ -1,24 +1,25 @@
+import './DisplayPosts.css'
+
 
 const DisplayPosts = (props) => {
     return ( 
         <div>
             {props.allPosts.map((post) => {
                         return (
-                            <div>
-                                <table>
+                            <div className='bottom-line pad'>
+                                <table className='flex-container'>
                                     <thead>
                                         <tr>
-                                            <th>{post.name}</th>
+                                            <th className='change-name-size'>{post.name}</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody className='offset-post-content'>
                                         <tr>
-                                            <td>{post.post}</td>
+                                            <td className='max-post-width'>{post.post}</td>
                                         </tr>
-                                        <tr>{post.buttons}</tr>
-                                        
                                     </tbody>
                                 </table>
+                                <div className='buttons-margin'>{post.buttons}</div>
                             </div>
                         )})}
         </div>
