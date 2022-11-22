@@ -10,15 +10,21 @@ function App() {
   const [posts, setPosts] = useState([{}])
 
   function addNewPost (post){
-    let tempPosts = [post, ...posts]
+    let tempPosts = [...posts, post]
     setPosts(tempPosts)
   }
 
   return (
     <div>
-      <NavBar />
-      <CreatePost addNewPost={addNewPost}/>    
-      <DisplayPosts allPosts={posts}/>
+        <NavBar />
+      <div className="container-wrapper">
+        <div className="border-box create-post-wrap">
+          <CreatePost addNewPost={addNewPost}/>  
+        </div>
+        <div className="border-box post-wrap">
+          <DisplayPosts allPosts={posts}/>
+        </div>
+      </div>
     </div>
   );
 }

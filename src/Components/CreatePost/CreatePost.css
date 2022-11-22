@@ -1,0 +1,65 @@
+label{
+    color:rgb(112,112,112);
+    font-size: 27px;
+    font-weight: 600;
+}
+
+div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(112,112,112);
+}
+
+input[type='text']{
+    font-size: 25px;
+}
+
+.create-row{
+        display: flex;
+        flex-direction: row;
+    
+    
+}
+
+.create-post-container{
+    display:flex;
+    flex-flow: wrap row;
+    
+}
+
+.name-input{
+    width: 699px;
+    height: 49px;
+    margin-left: 20px;
+}
+
+.post-margin{
+    margin-top: 3px;
+}
+.post-input{
+    width: 699px;
+    height: 97px;
+    margin-top: 11px;
+    margin-left: 41px;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(24, 103, 171);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.button-margin{
+    border:none;
+    border-radius: 25px;
+    margin-left: 3.2em;
+    margin-top: 4.6em;
+}

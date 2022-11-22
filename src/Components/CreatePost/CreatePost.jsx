@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Buttons from './Buttons/Buttons';
-
+import './CreatePost.css'
 
 
 const CreatePost = (props) => {
@@ -20,11 +20,19 @@ const CreatePost = (props) => {
 
     return ( 
         <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type = 'string' value = {name} onChange={(event) => setName(event.target.value)}/>
-            <label>Post</label>
-            <input type = 'string' value = {post} onChange={(event) => setPost(event.target.value)}/>
-            <button type='submit'>Create</button>
+            <div className='create-post-container'>
+                <div className='create-row'>
+                    <label>Name</label>
+                    <input className='name-input' type = 'text' value = {name} onChange={(event) => setName(event.target.value)}/>
+                </div>
+                <div className='create-row'>
+                    <label className='post-margin'>Post</label>
+                    <input className='post-input' type = 'text' value = {post} onChange={(event) => setPost(event.target.value)}/>
+                </div>
+                <div>
+                    <button className='button-margin' type='submit'>Create</button>
+                </div>
+            </div>
         </form>
     )
 }

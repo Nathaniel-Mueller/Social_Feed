@@ -15,9 +15,10 @@ const DisplayPosts = (props) => {
                                         <tr>
                                             <td>{post.post}</td>
                                         </tr>
+                                        <tr>{post.buttons}</tr>
+                                        
                                     </tbody>
                                 </table>
-                                <div>{post.buttons}</div>
                             </div>
                         )})}
         </div>
